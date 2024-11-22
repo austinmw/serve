@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -31,15 +31,19 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Metrics API" href="metrics_api.html" />
     <link rel="prev" title="Inference API" href="inference_api.html" />
-  <!-- Google Analytics -->
-  
-  <!-- End Google Analytics -->
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T8XT4PS');</script>
+    <!-- End Google Tag Manager -->
   
 
   
@@ -74,120 +78,170 @@
 
       <div class="main-menu">
         <ul>
-          <li>
-            <a href="https://pytorch.org/get-started">Get Started</a>
-          </li>
 
-          <li>
-            <a href="https://pytorch.org/ecosystem">Ecosystem</a>
-          </li>
-
-          <li>
-            <a href="https://pytorch.org/mobile">Mobile</a>
-          </li>
-
-          <li>
-            <a href="https://pytorch.org/blog/">Blog</a>
-          </li>
-
-          <li>
-            <a href="https://pytorch.org/tutorials">Tutorials</a>
-          </li>
-
-          <li>
-            <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
-              <a class="resource-option with-down-orange-arrow">
-                Docs
+          <li class="main-menu-item">
+          <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                Learn
               </a>
               <div class="resources-dropdown-menu">
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/docs/stable/index.html">
-                  <span class="dropdown-title">PyTorch</span>
-                  <p></p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/get-started">
+                  <span class=dropdown-title>Get Started</span>
+                  <p>Run PyTorch locally or get started quickly with one of the supported cloud platforms</p>
                 </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/audio/stable/index.html">
-                  <span class="dropdown-title">torchaudio</span>
-                  <p></p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/tutorials">
+                  <span class="dropdown-title">Tutorials</span>
+                  <p>Whats new in PyTorch tutorials</p>
                 </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/text/stable/index.html">
-                  <span class="dropdown-title">torchtext</span>
-                  <p></p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/tutorials/beginner/basics/intro.html">
+                  <span class="dropdown-title">Learn the Basics</span>
+                  <p>Familiarize yourself with PyTorch concepts and modules</p>
                 </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/vision/stable/index.html">
-                  <span class="dropdown-title">torchvision</span>
-                  <p></p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/tutorials/recipes/recipes_index.html">
+                  <span class="dropdown-title">PyTorch Recipes</span>
+                  <p>Bite-size, ready-to-deploy PyTorch code examples</p>
                 </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/torcharrow">
-                  <span class="dropdown-title">torcharrow</span>
-                  <p></p>
-                </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/data">
-                  <span class="dropdown-title">TorchData</span>
-                  <p></p>
-                </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/torchrec">
-                  <span class="dropdown-title">TorchRec</span>
-                  <p></p>
-                </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/serve/">
-                  <span class="dropdown-title">TorchServe</span>
-                  <p></p>
-                </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/torchx/">
-                  <span class="dropdown-title">TorchX</span>
-                  <p></p>
-                </a>
-                <a class="doc-dropdown-option nav-dropdown-item" href="https://pytorch.org/xla">
-                  <span class="dropdown-title">PyTorch on XLA Devices</span>
-                  <p></p>
-                </a>
-            </div>
-          </li>
-
-          <li>
-            <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
-              <a class="resource-option with-down-arrow">
-                Resources
-              </a>
-              <div class="resources-dropdown-menu">
-                <a class="nav-dropdown-item" href="https://pytorch.org/features">
-                  <span class="dropdown-title">About</span>
-                  <p>Learn about PyTorch’s features and capabilities</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/foundation">
-                  <span class="dropdown-title">PyTorch Foundation</span>
-                  <p>Learn about the PyTorch foundation</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/#community-module">
-                  <span class="dropdown-title">Community</span>
-                  <p>Join the PyTorch developer community to contribute, learn, and get your questions answered.</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/community-stories">
-                  <span class="dropdown-title">Community Stories</span>
-                  <p>Learn how our community solves real, everyday machine learning problems with PyTorch.</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/resources">
-                  <span class="dropdown-title">Developer Resources</span>
-                  <p>Find resources and get questions answered</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/events">
-                  <span class="dropdown-title">Events</span>
-                  <p>Find events, webinars, and podcasts</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://discuss.pytorch.org/" target="_blank">
-                  <span class="dropdown-title">Forums</span>
-                  <p>A place to discuss PyTorch code, issues, install, research</p>
-                </a>
-                <a class="nav-dropdown-item" href="https://pytorch.org/hub">
-                  <span class="dropdown-title">Models (Beta)</span>
-                  <p>Discover, publish, and reuse pre-trained models</p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/tutorials/beginner/introyt.html">
+                  <span class="dropdown-title">Intro to PyTorch - YouTube Series</span>
+                  <p>Master PyTorch basics with our engaging YouTube tutorial series</p>
                 </a>
               </div>
             </div>
           </li>
 
           <li>
-            <a href="https://github.com/pytorch/pytorch">GitHub</a>
+          <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                Ecosystem
+              </a>
+              <div class="resources-dropdown-menu">
+                <a class="nav-dropdown-item" href="https://pytorch.org/ecosystem">
+                  <span class="dropdown-title">Tools</span>
+                  <p>Learn about the tools and frameworks in the PyTorch Ecosystem</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/#community-module">
+                  <span class=dropdown-title>Community</span>
+                  <p>Join the PyTorch developer community to contribute, learn, and get your questions answered</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://discuss.pytorch.org/" target="_blank">
+                  <span class=dropdown-title>Forums</span>
+                  <p>A place to discuss PyTorch code, issues, install, research</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/resources">
+                  <span class=dropdown-title>Developer Resources</span>
+                  <p>Find resources and get questions answered</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/ecosystem/contributor-awards-2023">
+                  <span class="dropdown-title">Contributor Awards - 2023</span>
+                  <p>Award winners announced at this year's PyTorch Conference</p>
+                </a>
+              </div>
+            </div>
           </li>
+
+          <li>
+          <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                Edge
+              </a>
+              <div class="resources-dropdown-menu">
+                <a class="nav-dropdown-item" href="https://pytorch.org/edge">
+                  <span class="dropdown-title">About PyTorch Edge</span>
+                  <p>Build innovative and privacy-aware AI experiences for edge devices</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/executorch-overview">
+                  <span class="dropdown-title">ExecuTorch</span>
+                  <p>End-to-end solution for enabling on-device inference capabilities across mobile and edge devices</p>
+                </a>
+              </div>
+            </div>  
+          </li>
+
+          <li class="main-menu-item">
+            <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                Docs
+              </a>
+              <div class="resources-dropdown-menu">
+                <a class="nav-dropdown-item" href="https://pytorch.org/docs/stable/index.html">
+                  <span class="dropdown-title">PyTorch</span>
+                  <p>Explore the documentation for comprehensive guidance on how to use PyTorch</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/pytorch-domains">
+                  <span class="dropdown-title">PyTorch Domains</span>
+                  <p>Read the PyTorch Domains documentation to learn more about domain-specific libraries</p>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                Blogs & News 
+              </a>
+              <div class="resources-dropdown-menu">
+                <a class="nav-dropdown-item" href="https://pytorch.org/blog/">
+                  <span class="dropdown-title">PyTorch Blog</span>
+                  <p>Catch up on the latest technical news and happenings</p>
+                </a>
+                 <a class="nav-dropdown-item" href="https://pytorch.org/community-blog">
+                  <span class="dropdown-title">Community Blog</span>
+                  <p>Stories from the PyTorch ecosystem</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/videos">
+                  <span class="dropdown-title">Videos</span>
+                  <p>Learn about the latest PyTorch tutorials, new, and more </p>
+                <a class="nav-dropdown-item" href="https://pytorch.org/community-stories">
+                  <span class="dropdown-title">Community Stories</span>
+                  <p>Learn how our community solves real, everyday machine learning problems with PyTorch</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/events">
+                  <span class="dropdown-title">Events</span>
+                  <p>Find events, webinars, and podcasts</p>
+                </a>
+            </div>
+          </li>
+
+          <li>
+            <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
+              <a class="with-down-arrow">
+                About
+              </a>
+              <div class="resources-dropdown-menu">
+                <a class="nav-dropdown-item" href="https://pytorch.org/foundation">
+                  <span class="dropdown-title">PyTorch Foundation</span>
+                  <p>Learn more about the PyTorch Foundation</p>
+                </a>
+                <a class="nav-dropdown-item" href="https://pytorch.org/governing-board">
+                  <span class="dropdown-title">Governing Board</span>
+                  <p></p>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="main-menu-item">
+            <div class="no-dropdown">
+              <a href="https://pytorch.org/join" data-cta="join">
+                Become a Member
+              </a>
+            </div>
+          </li>
+          <li>
+           <div class="main-menu-item">
+             <a href="https://github.com/pytorch/pytorch" class="github-icon">
+             </a>
+           </div>
+          </li>
+          <!--- TODO: This block adds the search icon to the nav bar. We will enable it later. 
+          <li>
+            <div class="main-menu-item">
+             <a href="https://github.com/pytorch/pytorch" class="search-icon">
+             </a>
+            </div>
+          </li>
+          --->
         </ul>
       </div>
 
@@ -245,28 +299,32 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">1. TorchServe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Troubleshooting.html">2. Troubleshooting Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="batch_inference_with_ts.html">3. Batch Inference with TorchServe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="code_coverage.html">4. Code Coverage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">5. Advanced configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_service.html">6. Custom Service</a></li>
-<li class="toctree-l1"><a class="reference internal" href="default_handlers.html">7. TorchServe default inference handlers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logging.html">8. Logging in Torchserve</a></li>
-<li class="toctree-l1"><a class="reference internal" href="metrics.html">9. TorchServe Metrics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="model_zoo.html">10. Model Zoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="request_envelopes.html">11. Request Envelopes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="server.html">12. Running TorchServe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="snapshot.html">13. TorchServe model snapshot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sphinx/requirements.html">14. cf. https://github.com/ryanfox/sphinx-markdown-tables/issues/36</a></li>
-<li class="toctree-l1"><a class="reference internal" href="torchserve_on_win_native.html">15. TorchServe on Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="torchserve_on_wsl.html">16. TorchServe on Windows Subsystem for Linux (WSL)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="use_cases.html">17. Torchserve Use Cases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workflows.html">18. TorchServe Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">TorchServe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Troubleshooting.html">Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance_guide.html">Performance Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="batch_inference_with_ts.html">Batch Inference with TorchServe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_coverage.html">Code Coverage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Advanced configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_service.html">Custom Service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="default_handlers.html">TorchServe default inference handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging in Torchserve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">TorchServe Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model_zoo.html">Model Zoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="request_envelopes.html">Request Envelopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Running TorchServe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nvidia_mps.html">Running TorchServe with NVIDIA MPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snapshot.html">TorchServe model snapshot</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/pytorch/serve/tree/master/examples/intel_extension_for_pytorch">intel_extension_for_pytorch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torchserve_on_win_native.html">TorchServe on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torchserve_on_wsl.html">TorchServe on Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use_cases.html">Torchserve Use Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">TorchServe Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="large_model_inference.html">Serving large models with Torchserve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQs.html">FAQ’S</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Service APIs:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Service APIs:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="grpc_api.html">TorchServe gRPC API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inference_api.html">Inference API</a></li>
@@ -276,7 +334,7 @@
 <li class="toctree-l1"><a class="reference internal" href="workflow_inference_api.html">Workflow Inference API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workflow_management_api.html">Management API</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer APIs:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Developer APIs:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api/ts.html">ts package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/ts.torch_handler.request_envelope.html">ts.torch_handler.request_envelope package</a></li>
@@ -353,6 +411,10 @@
         <div class="pytorch-content-left">
 
         
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8XT4PS"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
           
           <div class="rst-content">
           
@@ -360,7 +422,7 @@
              <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
               
   <section id="management-api">
-<h1>Management API<a class="headerlink" href="#management-api" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference external" href="#management-api">Management API</a><a class="headerlink" href="#management-api" title="Permalink to this heading">¶</a></h1>
 <p>TorchServe provides the following APIs that allows you to manage models at runtime:</p>
 <ol class="simple">
 <li><p><a class="reference external" href="#register-a-model">Register a model</a></p></li>
@@ -369,13 +431,17 @@
 <li><p><a class="reference external" href="#unregister-a-model">Unregister a model</a></p></li>
 <li><p><a class="reference external" href="#list-models">List registered models</a></p></li>
 <li><p><a class="reference external" href="#set-default-version">Set default version of a model</a></p></li>
+<li><p><a class="reference external" href="#token-authorization-api">Refresh tokens for token authorization</a></p></li>
 </ol>
 <p>The Management API listens on port 8081 and is only accessible from localhost by default. To change the default setting, see <a class="reference internal" href="configuration.html"><span class="doc">TorchServe Configuration</span></a>.</p>
+<p>Management API for registering and deleting models is disabled by default. Add <code class="docutils literal notranslate"><span class="pre">--enable-model-api</span></code> to command line when running TorchServe to enable the use of these APIs. For more details and ways to enable see <a class="reference external" href="https://github.com/pytorch/serve/blob/master/docs/model_api_control">Model API control</a></p>
+<p>For all Management API requests, TorchServe requires the correct Management token to be included or token authorization must be disabled. For more details see <a class="reference internal" href="token_authorization_api.html"><span class="doc">token authorization documentation</span></a></p>
 <p>Similar to the <a class="reference internal" href="inference_api.html"><span class="doc">Inference API</span></a>, the Management API provides a <a class="reference external" href="#api-description">API description</a> to describe management APIs with the OpenAPI 3.0 specification.</p>
 <p>Alternatively, if you want to use KServe, TorchServe supports both v1 and v2 API. For more details please look into this <a class="reference external" href="https://github.com/pytorch/serve/tree/master/kubernetes/kserve">kserve documentation</a></p>
 <section id="register-a-model">
-<h2>Register a model<a class="headerlink" href="#register-a-model" title="Permalink to this headline">¶</a></h2>
+<h2>Register a model<a class="headerlink" href="#register-a-model" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.RegisterModel</a> gRPC API.</p>
+<p>To use this API after TorchServe starts, model API control has to be enabled. Add <code class="docutils literal notranslate"><span class="pre">--enable-model-api</span></code> to command line when starting TorchServe to enable the use of this API. For more details see <a class="reference internal" href="model_api_control.html"><span class="doc">model API control</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">POST</span> <span class="pre">/models</span></code></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">url</span></code> - Model archive download url. Supports the following locations:</p>
@@ -392,16 +458,17 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">initial_workers</span></code> - the number of initial workers to create. The default value is <code class="docutils literal notranslate"><span class="pre">0</span></code>. TorchServe will not run inference until there is at least one work assigned.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">synchronous</span></code> - whether or not the creation of worker is synchronous. The default value is false. TorchServe will create new workers without waiting for acknowledgement that the previous worker is online.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">response_timeout</span></code> - If the model’s backend worker doesn’t respond with inference response within this timeout period, the worker will be deemed unresponsive and rebooted. The units is seconds. The default value is 120 seconds.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">startup_timeout</span></code> - If the model’s backend worker doesn’t load the model within this timeout period, the worker will be deemed unresponsive and rebooted. The units is seconds. The default value is 120 seconds.</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -X POST  <span class="s2">&quot;http://localhost:8081/models?url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w">  </span><span class="s2">&quot;http://localhost:8081/models?url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
 
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Model \&quot;squeezenet_v1.1\&quot; Version: 1.0 registered with 0 initial workers. Use scale workers API to add workers for the model.&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Model \&quot;squeezenet_v1.1\&quot; Version: 1.0 registered with 0 initial workers. Use scale workers API to add workers for the model.&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 <section id="encrypted-model-serving">
-<h3>Encrypted model serving<a class="headerlink" href="#encrypted-model-serving" title="Permalink to this headline">¶</a></h3>
+<h3>Encrypted model serving<a class="headerlink" href="#encrypted-model-serving" title="Permalink to this heading">¶</a></h3>
 <p>If you’d like to serve an encrypted model then you need to setup <a class="reference external" href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html">S3 SSE-KMS</a> with the following environment variables:</p>
 <ul class="simple">
 <li><p>AWS_ACCESS_KEY_ID</p></li>
@@ -420,10 +487,10 @@
 <li><p>start torchserve</p></li>
 <li><p>Register encrypted model squeezenet1_1 by setting s3_sse_kms=true in curl command.</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -X POST  <span class="s2">&quot;http://localhost:8081/models?url=https://torchserve.pytorch.org/sse-test/squeezenet1_1.mar&amp;s3_sse_kms=true&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w">  </span><span class="s2">&quot;http://localhost:8081/models?url=https://torchserve.pytorch.org/sse-test/squeezenet1_1.mar&amp;s3_sse_kms=true&quot;</span>
 
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Model \&quot;squeezenet_v1.1\&quot; Version: 1.0 registered with 0 initial workers. Use scale workers API to add workers for the model.&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Model \&quot;squeezenet_v1.1\&quot; Version: 1.0 registered with 0 initial workers. Use scale workers API to add workers for the model.&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -441,37 +508,37 @@
 <p>You might want to create workers during registration. because creating initial workers might take some time,
 you can choose between synchronous or asynchronous call to make sure initial workers are created properly.</p>
 <p>The asynchronous call returns with HTTP code 202 before trying to create workers.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X POST <span class="s2">&quot;http://localhost:8081/models?initial_workers=1&amp;synchronous=false&amp;url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models?initial_workers=1&amp;synchronous=false&amp;url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
 
-&lt; HTTP/1.1 <span class="m">202</span> Accepted
-&lt; content-type: application/json
-&lt; x-request-id: 4dc54158-c6de-42aa-b5dd-ebcb5f721043
-&lt; content-length: <span class="m">47</span>
-&lt; connection: keep-alive
-&lt; 
+&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">202</span><span class="w"> </span>Accepted
+&lt;<span class="w"> </span>content-type:<span class="w"> </span>application/json
+&lt;<span class="w"> </span>x-request-id:<span class="w"> </span>4dc54158-c6de-42aa-b5dd-ebcb5f721043
+&lt;<span class="w"> </span>content-length:<span class="w"> </span><span class="m">47</span>
+&lt;<span class="w"> </span>connection:<span class="w"> </span>keep-alive
+&lt;
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Processing worker updates...&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Processing worker updates...&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 <p>The synchronous call returns with HTTP code 200 after all workers have been adjusted.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X POST <span class="s2">&quot;http://localhost:8081/models?initial_workers=1&amp;synchronous=true&amp;url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models?initial_workers=1&amp;synchronous=true&amp;url=https://torchserve.pytorch.org/mar_files/squeezenet1_1.mar&quot;</span>
 
-&lt; HTTP/1.1 <span class="m">200</span> OK
-&lt; content-type: application/json
-&lt; x-request-id: ecd2e502-382f-4c3b-b425-519fbf6d3b85
-&lt; content-length: <span class="m">89</span>
-&lt; connection: keep-alive
-&lt; 
+&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">200</span><span class="w"> </span>OK
+&lt;<span class="w"> </span>content-type:<span class="w"> </span>application/json
+&lt;<span class="w"> </span>x-request-id:<span class="w"> </span>ecd2e502-382f-4c3b-b425-519fbf6d3b85
+&lt;<span class="w"> </span>content-length:<span class="w"> </span><span class="m">89</span>
+&lt;<span class="w"> </span>connection:<span class="w"> </span>keep-alive
+&lt;
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Model \&quot;squeezenet1_1\&quot; Version: 1.0 registered with 1 initial workers&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Model \&quot;squeezenet1_1\&quot; Version: 1.0 registered with 1 initial workers&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="scale-workers">
-<h2>Scale workers<a class="headerlink" href="#scale-workers" title="Permalink to this headline">¶</a></h2>
+<h2>Scale workers<a class="headerlink" href="#scale-workers" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.ScaleWorker</a> gRPC API. It returns the status of a model in the ModelServer.</p>
 <p><code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/models/{model_name}</span></code></p>
 <ul class="simple">
@@ -483,151 +550,167 @@ you can choose between synchronous or asynchronous call to make sure initial wor
 <p>Use the Scale Worker API to dynamically adjust the number of workers for any version of a model to better serve different inference request loads.</p>
 <p>There are two different flavors of this API, synchronous and asynchronous.</p>
 <p>The asynchronous call will return immediately with HTTP code 202:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X PUT <span class="s2">&quot;http://localhost:8081/models/noop?min_worker=3&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models/noop?min_worker=3&quot;</span>
 
-&lt; HTTP/1.1 <span class="m">202</span> Accepted
-&lt; content-type: application/json
-&lt; x-request-id: 42adc58e-6956-4198-ad07-db6c620c4c1e
-&lt; content-length: <span class="m">47</span>
-&lt; connection: keep-alive
-&lt; 
+&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">202</span><span class="w"> </span>Accepted
+&lt;<span class="w"> </span>content-type:<span class="w"> </span>application/json
+&lt;<span class="w"> </span>x-request-id:<span class="w"> </span>42adc58e-6956-4198-ad07-db6c620c4c1e
+&lt;<span class="w"> </span>content-length:<span class="w"> </span><span class="m">47</span>
+&lt;<span class="w"> </span>connection:<span class="w"> </span>keep-alive
+&lt;
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Processing worker updates...&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Processing worker updates...&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 <p>The synchronous call returns with HTTP code 200 after all workers have been adjusted.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X PUT <span class="s2">&quot;http://localhost:8081/models/noop?min_worker=3&amp;synchronous=true&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models/noop?min_worker=3&amp;synchronous=true&quot;</span>
 
-&lt; HTTP/1.1 <span class="m">200</span> OK
-&lt; content-type: application/json
-&lt; x-request-id: b72b1ea0-81c6-4cce-92c4-530d3cfe5d4a
-&lt; content-length: <span class="m">63</span>
-&lt; connection: keep-alive
-&lt; 
+&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">200</span><span class="w"> </span>OK
+&lt;<span class="w"> </span>content-type:<span class="w"> </span>application/json
+&lt;<span class="w"> </span>x-request-id:<span class="w"> </span>b72b1ea0-81c6-4cce-92c4-530d3cfe5d4a
+&lt;<span class="w"> </span>content-length:<span class="w"> </span><span class="m">63</span>
+&lt;<span class="w"> </span>connection:<span class="w"> </span>keep-alive
+&lt;
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Workers scaled to 3 for model: noop&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Workers scaled to 3 for model: noop&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 <p>To scale workers of a specific version of a model use URI : /models/{model_name}/{version}
 <code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/models/{model_name}/{version}</span></code></p>
 <p>The following synchronous call will return after all workers for version “2.0” for model “noop” has be adjusted with HTTP code 200.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X PUT <span class="s2">&quot;http://localhost:8081/models/noop/2.0?min_worker=3&amp;synchronous=true&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models/noop/2.0?min_worker=3&amp;synchronous=true&quot;</span>
 
-&lt; HTTP/1.1 <span class="m">200</span> OK
-&lt; content-type: application/json
-&lt; x-request-id: 3997ccd4-ae44-4570-b249-e361b08d3d47
-&lt; content-length: <span class="m">77</span>
-&lt; connection: keep-alive
-&lt; 
+&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">200</span><span class="w"> </span>OK
+&lt;<span class="w"> </span>content-type:<span class="w"> </span>application/json
+&lt;<span class="w"> </span>x-request-id:<span class="w"> </span>3997ccd4-ae44-4570-b249-e361b08d3d47
+&lt;<span class="w"> </span>content-length:<span class="w"> </span><span class="m">77</span>
+&lt;<span class="w"> </span>connection:<span class="w"> </span>keep-alive
+&lt;
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Workers scaled to 3 for model: noop, version: 2.0&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Workers scaled to 3 for model: noop, version: 2.0&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="describe-model">
-<h2>Describe model<a class="headerlink" href="#describe-model" title="Permalink to this headline">¶</a></h2>
+<h2>Describe model<a class="headerlink" href="#describe-model" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.DescribeModel</a> gRPC API. It returns the status of a model in the ModelServer.</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/models/{model_name}</span></code></p>
 <p>Use the Describe Model API to get detail runtime status of default version of a model:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:8081/models/noop
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8081/models/noop
 <span class="o">[</span>
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop&quot;</span>,
-      <span class="s2">&quot;modelVersion&quot;</span>: <span class="s2">&quot;1.0&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop.mar&quot;</span>,
-      <span class="s2">&quot;engine&quot;</span>: <span class="s2">&quot;Torch&quot;</span>,
-      <span class="s2">&quot;runtime&quot;</span>: <span class="s2">&quot;python&quot;</span>,
-      <span class="s2">&quot;minWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;batchSize&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxBatchDelay&quot;</span>: <span class="m">100</span>,
-      <span class="s2">&quot;workers&quot;</span>: <span class="o">[</span>
-        <span class="o">{</span>
-          <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;9000&quot;</span>,
-          <span class="s2">&quot;startTime&quot;</span>: <span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
-          <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;READY&quot;</span>,
-          <span class="s2">&quot;gpu&quot;</span>: false,
-          <span class="s2">&quot;memoryUsage&quot;</span>: <span class="m">89247744</span>
-        <span class="o">}</span>
-      <span class="o">]</span>
-    <span class="o">}</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelVersion&quot;</span>:<span class="w"> </span><span class="s2">&quot;1.0&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop.mar&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;engine&quot;</span>:<span class="w"> </span><span class="s2">&quot;Torch&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;runtime&quot;</span>:<span class="w"> </span><span class="s2">&quot;python&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;minWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;batchSize&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxBatchDelay&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">      </span><span class="s2">&quot;workers&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">        </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="s2">&quot;9000&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;startTime&quot;</span>:<span class="w"> </span><span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;READY&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;gpu&quot;</span>:<span class="w"> </span>false,
+<span class="w">          </span><span class="s2">&quot;memoryUsage&quot;</span>:<span class="w"> </span><span class="m">89247744</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">      </span><span class="o">]</span>,
+<span class="w">      </span><span class="s2">&quot;jobQueueStatus&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;remainingCapacity&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">        </span><span class="s2">&quot;pendingRequests&quot;</span>:<span class="w"> </span><span class="m">0</span>
+<span class="w">      </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>
 <span class="o">]</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/models/{model_name}/{version}</span></code></p>
 <p>Use the Describe Model API to get detail runtime status of specific version of a model:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:8081/models/noop/2.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8081/models/noop/2.0
 <span class="o">[</span>
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop&quot;</span>,
-      <span class="s2">&quot;modelVersion&quot;</span>: <span class="s2">&quot;2.0&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop_2.mar&quot;</span>,
-      <span class="s2">&quot;engine&quot;</span>: <span class="s2">&quot;Torch&quot;</span>,
-      <span class="s2">&quot;runtime&quot;</span>: <span class="s2">&quot;python&quot;</span>,
-      <span class="s2">&quot;minWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;batchSize&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxBatchDelay&quot;</span>: <span class="m">100</span>,
-      <span class="s2">&quot;workers&quot;</span>: <span class="o">[</span>
-        <span class="o">{</span>
-          <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;9000&quot;</span>,
-          <span class="s2">&quot;startTime&quot;</span>: <span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
-          <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;READY&quot;</span>,
-          <span class="s2">&quot;gpu&quot;</span>: false,
-          <span class="s2">&quot;memoryUsage&quot;</span>: <span class="m">89247744</span>
-        <span class="o">}</span>
-      <span class="o">]</span>
-    <span class="o">}</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelVersion&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop_2.mar&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;engine&quot;</span>:<span class="w"> </span><span class="s2">&quot;Torch&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;runtime&quot;</span>:<span class="w"> </span><span class="s2">&quot;python&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;minWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;batchSize&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxBatchDelay&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">      </span><span class="s2">&quot;workers&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">        </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="s2">&quot;9000&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;startTime&quot;</span>:<span class="w"> </span><span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;READY&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;gpu&quot;</span>:<span class="w"> </span>false,
+<span class="w">          </span><span class="s2">&quot;memoryUsage&quot;</span>:<span class="w"> </span><span class="m">89247744</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">      </span><span class="o">]</span>,
+<span class="w">      </span><span class="s2">&quot;jobQueueStatus&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;remainingCapacity&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">        </span><span class="s2">&quot;pendingRequests&quot;</span>:<span class="w"> </span><span class="m">0</span>
+<span class="w">      </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>
 <span class="o">]</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/models/{model_name}/all</span></code></p>
 <p>Use the Describe Model API to get detail runtime status of all version of a model:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:8081/models/noop/all
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8081/models/noop/all
 <span class="o">[</span>
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop&quot;</span>,
-      <span class="s2">&quot;modelVersion&quot;</span>: <span class="s2">&quot;1.0&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop.mar&quot;</span>,
-      <span class="s2">&quot;engine&quot;</span>: <span class="s2">&quot;Torch&quot;</span>,
-      <span class="s2">&quot;runtime&quot;</span>: <span class="s2">&quot;python&quot;</span>,
-      <span class="s2">&quot;minWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;batchSize&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxBatchDelay&quot;</span>: <span class="m">100</span>,
-      <span class="s2">&quot;workers&quot;</span>: <span class="o">[</span>
-        <span class="o">{</span>
-          <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;9000&quot;</span>,
-          <span class="s2">&quot;startTime&quot;</span>: <span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
-          <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;READY&quot;</span>,
-          <span class="s2">&quot;gpu&quot;</span>: false,
-          <span class="s2">&quot;memoryUsage&quot;</span>: <span class="m">89247744</span>
-        <span class="o">}</span>
-      <span class="o">]</span>
-    <span class="o">}</span>,
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop&quot;</span>,
-      <span class="s2">&quot;modelVersion&quot;</span>: <span class="s2">&quot;2.0&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop_2.mar&quot;</span>,
-      <span class="s2">&quot;engine&quot;</span>: <span class="s2">&quot;Torch&quot;</span>,
-      <span class="s2">&quot;runtime&quot;</span>: <span class="s2">&quot;python&quot;</span>,
-      <span class="s2">&quot;minWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxWorkers&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;batchSize&quot;</span>: <span class="m">1</span>,
-      <span class="s2">&quot;maxBatchDelay&quot;</span>: <span class="m">100</span>,
-      <span class="s2">&quot;workers&quot;</span>: <span class="o">[</span>
-        <span class="o">{</span>
-          <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;9000&quot;</span>,
-          <span class="s2">&quot;startTime&quot;</span>: <span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
-          <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;READY&quot;</span>,
-          <span class="s2">&quot;gpu&quot;</span>: false,
-          <span class="s2">&quot;memoryUsage&quot;</span>: <span class="m">89247744</span>
-        <span class="o">}</span>
-      <span class="o">]</span>
-    <span class="o">}</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelVersion&quot;</span>:<span class="w"> </span><span class="s2">&quot;1.0&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop.mar&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;engine&quot;</span>:<span class="w"> </span><span class="s2">&quot;Torch&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;runtime&quot;</span>:<span class="w"> </span><span class="s2">&quot;python&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;minWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;batchSize&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxBatchDelay&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">      </span><span class="s2">&quot;workers&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">        </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="s2">&quot;9000&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;startTime&quot;</span>:<span class="w"> </span><span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;READY&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;gpu&quot;</span>:<span class="w"> </span>false,
+<span class="w">          </span><span class="s2">&quot;memoryUsage&quot;</span>:<span class="w"> </span><span class="m">89247744</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">      </span><span class="o">]</span>,
+<span class="w">      </span><span class="s2">&quot;jobQueueStatus&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;remainingCapacity&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">        </span><span class="s2">&quot;pendingRequests&quot;</span>:<span class="w"> </span><span class="m">0</span>
+<span class="w">      </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelVersion&quot;</span>:<span class="w"> </span><span class="s2">&quot;2.0&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop_2.mar&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;engine&quot;</span>:<span class="w"> </span><span class="s2">&quot;Torch&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;runtime&quot;</span>:<span class="w"> </span><span class="s2">&quot;python&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;minWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;batchSize&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">      </span><span class="s2">&quot;maxBatchDelay&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">      </span><span class="s2">&quot;workers&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">        </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="s2">&quot;9000&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;startTime&quot;</span>:<span class="w"> </span><span class="s2">&quot;2018-10-02T13:44:53.034Z&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;READY&quot;</span>,
+<span class="w">          </span><span class="s2">&quot;gpu&quot;</span>:<span class="w"> </span>false,
+<span class="w">          </span><span class="s2">&quot;memoryUsage&quot;</span>:<span class="w"> </span><span class="m">89247744</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">      </span><span class="o">]</span>,
+<span class="w">      </span><span class="s2">&quot;jobQueueStatus&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;remainingCapacity&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">        </span><span class="s2">&quot;pendingRequests&quot;</span>:<span class="w"> </span><span class="m">0</span>
+<span class="w">      </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>
 <span class="o">]</span>
 </pre></div>
 </div>
@@ -639,7 +722,7 @@ or
 <li><p>Implement function describe_handle. E.g.</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">describe_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Customized describe handler</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Customized describe handler</span>
 <span class="sd">        Returns:</span>
 <span class="sd">            dict : A dictionary response.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -678,7 +761,7 @@ or
 <li><p>Call function _is_describe and describe_handle in handle. E.g.</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Entry point for default handler. It takes the data from the input request and returns</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Entry point for default handler. It takes the data from the input request and returns</span>
 <span class="sd">           the predicted outcome for the input.</span>
 <span class="sd">        Args:</span>
 <span class="sd">            data (list): The input data that needs to be made a prediction request on.</span>
@@ -719,31 +802,35 @@ or
 <ul class="simple">
 <li><p>Here is an example. “customizedMetadata” shows the metadata from user’s model. These metadata can be decoded into a dictionary.</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl http://localhost:8081/models/noop-customized/1.0?customized<span class="o">=</span><span class="nb">true</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>http://localhost:8081/models/noop-customized/1.0?customized<span class="o">=</span><span class="nb">true</span>
 <span class="o">[</span>
-    <span class="o">{</span>
-        <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop-customized&quot;</span>,
-        <span class="s2">&quot;modelVersion&quot;</span>: <span class="s2">&quot;1.0&quot;</span>,
-        <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop-customized.mar&quot;</span>,
-        <span class="s2">&quot;runtime&quot;</span>: <span class="s2">&quot;python&quot;</span>,
-        <span class="s2">&quot;minWorkers&quot;</span>: <span class="m">1</span>,
-        <span class="s2">&quot;maxWorkers&quot;</span>: <span class="m">1</span>,
-        <span class="s2">&quot;batchSize&quot;</span>: <span class="m">1</span>,
-        <span class="s2">&quot;maxBatchDelay&quot;</span>: <span class="m">100</span>,
-        <span class="s2">&quot;loadedAtStartup&quot;</span>: false,
-        <span class="s2">&quot;workers&quot;</span>: <span class="o">[</span>
-          <span class="o">{</span>
-            <span class="s2">&quot;id&quot;</span>: <span class="s2">&quot;9010&quot;</span>,
-            <span class="s2">&quot;startTime&quot;</span>: <span class="s2">&quot;2022-02-08T11:03:20.974Z&quot;</span>,
-            <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;READY&quot;</span>,
-            <span class="s2">&quot;memoryUsage&quot;</span>: <span class="m">0</span>,
-            <span class="s2">&quot;pid&quot;</span>: <span class="m">98972</span>,
-            <span class="s2">&quot;gpu&quot;</span>: false,
-            <span class="s2">&quot;gpuUsage&quot;</span>: <span class="s2">&quot;N/A&quot;</span>
-          <span class="o">}</span>
-        <span class="o">]</span>,
-        <span class="s2">&quot;customizedMetadata&quot;</span>: <span class="s2">&quot;{\n  \&quot;data1\&quot;: \&quot;1\&quot;,\n  \&quot;data2\&quot;: \&quot;2\&quot;\n}&quot;</span>
-     <span class="o">}</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop-customized&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;modelVersion&quot;</span>:<span class="w"> </span><span class="s2">&quot;1.0&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop-customized.mar&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;runtime&quot;</span>:<span class="w"> </span><span class="s2">&quot;python&quot;</span>,
+<span class="w">        </span><span class="s2">&quot;minWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">        </span><span class="s2">&quot;maxWorkers&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">        </span><span class="s2">&quot;batchSize&quot;</span>:<span class="w"> </span><span class="m">1</span>,
+<span class="w">        </span><span class="s2">&quot;maxBatchDelay&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">        </span><span class="s2">&quot;loadedAtStartup&quot;</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">&quot;workers&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">          </span><span class="o">{</span>
+<span class="w">            </span><span class="s2">&quot;id&quot;</span>:<span class="w"> </span><span class="s2">&quot;9010&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;startTime&quot;</span>:<span class="w"> </span><span class="s2">&quot;2022-02-08T11:03:20.974Z&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;READY&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;memoryUsage&quot;</span>:<span class="w"> </span><span class="m">0</span>,
+<span class="w">            </span><span class="s2">&quot;pid&quot;</span>:<span class="w"> </span><span class="m">98972</span>,
+<span class="w">            </span><span class="s2">&quot;gpu&quot;</span>:<span class="w"> </span>false,
+<span class="w">            </span><span class="s2">&quot;gpuUsage&quot;</span>:<span class="w"> </span><span class="s2">&quot;N/A&quot;</span>
+<span class="w">          </span><span class="o">}</span>
+<span class="w">        </span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">&quot;jobQueueStatus&quot;</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">&quot;remainingCapacity&quot;</span>:<span class="w"> </span><span class="m">100</span>,
+<span class="w">          </span><span class="s2">&quot;pendingRequests&quot;</span>:<span class="w"> </span><span class="m">0</span>
+<span class="w">        </span><span class="o">}</span>,
+<span class="w">        </span><span class="s2">&quot;customizedMetadata&quot;</span>:<span class="w"> </span><span class="s2">&quot;{\n  \&quot;data1\&quot;: \&quot;1\&quot;,\n  \&quot;data2\&quot;: \&quot;2\&quot;\n}&quot;</span>
+<span class="w">     </span><span class="o">}</span>
 <span class="o">]</span>
 </pre></div>
 </div>
@@ -760,20 +847,21 @@ or
 </div>
 </section>
 <section id="unregister-a-model">
-<h2>Unregister a model<a class="headerlink" href="#unregister-a-model" title="Permalink to this headline">¶</a></h2>
+<h2>Unregister a model<a class="headerlink" href="#unregister-a-model" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.UnregisterModel</a> gRPC API. It returns the status of a model in the ModelServer.</p>
+<p>To use this API after TorchServe starts, model API control has to be enabled. Add <code class="docutils literal notranslate"><span class="pre">--enable-model-api</span></code> to command line when starting TorchServe to enable the use of this API. For more details see <a class="reference internal" href="model_api_control.html"><span class="doc">model API control</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">DELETE</span> <span class="pre">/models/{model_name}/{version}</span></code></p>
 <p>Use the Unregister Model API to free up system resources by unregistering specific version of a model from TorchServe:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -X DELETE http://localhost:8081/models/noop/1.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>DELETE<span class="w"> </span>http://localhost:8081/models/noop/1.0
 
 <span class="o">{</span>
-  <span class="s2">&quot;status&quot;</span>: <span class="s2">&quot;Model \&quot;noop\&quot; unregistered&quot;</span>
+<span class="w">  </span><span class="s2">&quot;status&quot;</span>:<span class="w"> </span><span class="s2">&quot;Model \&quot;noop\&quot; unregistered&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="list-models">
-<h2>List models<a class="headerlink" href="#list-models" title="Permalink to this headline">¶</a></h2>
+<h2>List models<a class="headerlink" href="#list-models" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.ListModels</a> gRPC API. It returns the status of a model in the ModelServer.</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/models</span></code></p>
 <ul class="simple">
@@ -781,37 +869,37 @@ or
 <li><p><code class="docutils literal notranslate"><span class="pre">next_page_token</span></code> - (optional) queries for next page. It is passed as a query parameter. This value is return by a previous API call.</p></li>
 </ul>
 <p>Use the Models API to query default versions of current registered models:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl <span class="s2">&quot;http://localhost:8081/models&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models&quot;</span>
 </pre></div>
 </div>
 <p>This API supports pagination:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl <span class="s2">&quot;http://localhost:8081/models?limit=2&amp;next_page_token=2&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span><span class="s2">&quot;http://localhost:8081/models?limit=2&amp;next_page_token=2&quot;</span>
 
 <span class="o">{</span>
-  <span class="s2">&quot;nextPageToken&quot;</span>: <span class="s2">&quot;4&quot;</span>,
-  <span class="s2">&quot;models&quot;</span>: <span class="o">[</span>
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop-v1.0&quot;</span>
-    <span class="o">}</span>,
-    <span class="o">{</span>
-      <span class="s2">&quot;modelName&quot;</span>: <span class="s2">&quot;noop_v0.1&quot;</span>,
-      <span class="s2">&quot;modelUrl&quot;</span>: <span class="s2">&quot;noop-v0.1&quot;</span>
-    <span class="o">}</span>
-  <span class="o">]</span>
+<span class="w">  </span><span class="s2">&quot;nextPageToken&quot;</span>:<span class="w"> </span><span class="s2">&quot;4&quot;</span>,
+<span class="w">  </span><span class="s2">&quot;models&quot;</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop-v1.0&quot;</span>
+<span class="w">    </span><span class="o">}</span>,
+<span class="w">    </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">&quot;modelName&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop_v0.1&quot;</span>,
+<span class="w">      </span><span class="s2">&quot;modelUrl&quot;</span>:<span class="w"> </span><span class="s2">&quot;noop-v0.1&quot;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">  </span><span class="o">]</span>
 <span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="api-description">
-<h2>API Description<a class="headerlink" href="#api-description" title="Permalink to this headline">¶</a></h2>
+<h2>API Description<a class="headerlink" href="#api-description" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">OPTIONS</span> <span class="pre">/</span></code></p>
 <p>To view a full list of inference and management APIs, you can use following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># To view all inference APIs:</span>
-curl -X OPTIONS http://localhost:8080
+curl<span class="w"> </span>-X<span class="w"> </span>OPTIONS<span class="w"> </span>http://localhost:8080
 
 <span class="c1"># To view all management APIs:</span>
-curl -X OPTIONS http://localhost:8081
+curl<span class="w"> </span>-X<span class="w"> </span>OPTIONS<span class="w"> </span>http://localhost:8081
 </pre></div>
 </div>
 <p>The out is OpenAPI 3.0.1 json format. You use it to generate client code, see <a class="reference external" href="https://swagger.io/swagger-codegen/">swagger codegen</a> for detail.</p>
@@ -822,14 +910,29 @@ curl -X OPTIONS http://localhost:8081
 </ul>
 </section>
 <section id="set-default-version">
-<h2>Set Default Version<a class="headerlink" href="#set-default-version" title="Permalink to this headline">¶</a></h2>
+<h2>Set Default Version<a class="headerlink" href="#set-default-version" title="Permalink to this heading">¶</a></h2>
 <p>This API follows the <a class="reference external" href="https://github.com/pytorch/serve/blob/master/frontend/server/src/main/resources/proto/management.proto">ManagementAPIsService.SetDefault</a> gRPC API. It returns the status of a model in the ModelServer.</p>
 <p><code class="docutils literal notranslate"><span class="pre">PUT</span> <span class="pre">/models/{model_name}/{version}/set-default</span></code></p>
 <p>To set any registered version of a model as default version use:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl -v -X PUT http://localhost:8081/models/noop/2.0/set-default
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-v<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span>http://localhost:8081/models/noop/2.0/set-default
 </pre></div>
 </div>
 <p>The out is OpenAPI 3.0.1 json format. You use it to generate client code, see <a class="reference external" href="https://swagger.io/swagger-codegen/">swagger codegen</a> for detail.</p>
+</section>
+<section id="token-authorization-api">
+<h2>Token Authorization API<a class="headerlink" href="#token-authorization-api" title="Permalink to this heading">¶</a></h2>
+<p>TorchServe now enforces token authorization by default. Check the following documentation for more information: <a class="reference external" href="https://github.com/pytorch/serve/blob/master/docs/token_authorization_api">Token Authorization</a>.</p>
+<p>This API is used in order to generate a new key to replace either the management or inference key.</p>
+<p>Management Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl localhost:8081/token?type=management -H &quot;Authorization: Bearer {API Token}&quot;
+</pre></div>
+</div>
+<p>will replace the current management key in the key_file with a new one and will update the expiration time.</p>
+<p>Inference example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl localhost:8081/token?type=inference -H &quot;Authorization: Bearer {API Token}&quot;
+</pre></div>
+</div>
+<p>will replace the current inference key in the key_file with a new one and will update the expiration time.</p>
 </section>
 </section>
 
@@ -887,6 +990,7 @@ curl -X OPTIONS http://localhost:8081
 <li><a class="reference internal" href="#list-models">List models</a></li>
 <li><a class="reference internal" href="#api-description">API Description</a></li>
 <li><a class="reference internal" href="#set-default-version">Set Default Version</a></li>
+<li><a class="reference internal" href="#token-authorization-api">Token Authorization API</a></li>
 </ul>
 </li>
 </ul>
@@ -907,6 +1011,7 @@ curl -X OPTIONS http://localhost:8081
          <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
          <script src="_static/jquery.js"></script>
          <script src="_static/underscore.js"></script>
+         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
          <script src="_static/doctools.js"></script>
          <script src="_static/katex.min.js"></script>
          <script src="_static/auto-render.min.js"></script>
@@ -1012,9 +1117,9 @@ curl -X OPTIONS http://localhost:8081
         <div class="copyright">
         <p>© Copyright The Linux Foundation. The PyTorch Foundation is a project of The Linux Foundation.
           For web site terms of use, trademark policy and other policies applicable to The PyTorch Foundation please see
-          <a href="www.linuxfoundation.org/policies/">www.linuxfoundation.org/policies/</a>. The PyTorch Foundation supports the PyTorch open source
+          <a href="https://www.linuxfoundation.org/policies/">www.linuxfoundation.org/policies/</a>. The PyTorch Foundation supports the PyTorch open source
           project, which has been established as PyTorch Project a Series of LF Projects, LLC. For policies applicable to the PyTorch Project a Series of LF Projects, LLC,
-          please see <a href="www.lfprojects.org/policies/">www.lfprojects.org/policies/</a>.</p>
+          please see <a href="https://www.lfprojects.org/policies/">www.lfprojects.org/policies/</a>.</p>
       </div>
      </div>
 
@@ -1044,114 +1149,111 @@ curl -X OPTIONS http://localhost:8081
     <div class="mobile-main-menu-links-container">
       <div class="main-menu">
         <ul>
-          <li>
-            <a href="https://pytorch.org/get-started">Get Started</a>
-          </li>
+           <li class="resources-mobile-menu-title">
+             <a>Learn</a>
+           </li>
+           <ul class="resources-mobile-menu-items">
+             <li>
+               <a href="https://pytorch.org/get-started">Get Started</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/tutorials">Tutorials</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/tutorials/beginner/basics/intro.html">Learn the Basics</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/tutorials/recipes/recipes_index.html">PyTorch Recipes</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/tutorials/beginner/introyt.html">Introduction to PyTorch - YouTube Series</a>
+             </li>
+           </ul>
+           <li class="resources-mobile-menu-title">
+             <a>Ecosystem</a>
+           </li>
+           <ul class="resources-mobile-menu-items">
+             <li>
+               <a href="https://pytorch.org/ecosystem">Tools</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/#community-module">Community</a>
+             </li>
+             <li>
+               <a href="https://discuss.pytorch.org/">Forums</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/resources">Developer Resources</a>
+             </li>
+             <li>
+               <a href="https://pytorch.org/ecosystem/contributor-awards-2023">Contributor Awards - 2023</a>
+             </li>
+           </ul>
 
-          <li>
-            <a href="https://pytorch.org/ecosystem">Ecosystem</a>
-          </li>
-            
-          <li>
-            <a href="https://pytorch.org/mobile">Mobile</a>
-          </li>
+           <li class="resources-mobile-menu-title">
+             <a>Edge</a>
+           </li>
 
-          <li>
-            <a href="https://pytorch.org/blog/">Blog</a>
-          </li>
+           <ul class="resources-mobile-menu-items">
+             <li>
+               <a href="https://pytorch.org/edge">About PyTorch Edge</a>
+             </li>
+             
+             <li>
+               <a href="https://pytorch.org/executorch-overview">ExecuTorch</a>
+             </li>
+           </ul>
 
-          <li>
-            <a href="https://pytorch.org/tutorials">Tutorials</a>
-          </li>
+           <li class="resources-mobile-menu-title">
+             <a>Docs</a>
+           </li>
 
-          <li class="resources-mobile-menu-title">
-            Docs
-          </li>
-
-          <ul class="resources-mobile-menu-items">
+           <ul class="resources-mobile-menu-items">
             <li>
               <a href="https://pytorch.org/docs/stable/index.html">PyTorch</a>
             </li>
 
             <li>
-              <a href="https://pytorch.org/audio/stable/index.html">torchaudio</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/text/stable/index.html">torchtext</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/vision/stable/index.html">torchvision</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/torcharrow">torcharrow</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/data">TorchData</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/torchrec">TorchRec</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/serve/">TorchServe</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/torchx/">TorchX</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/xla">PyTorch on XLA Devices</a>
+              <a href="https://pytorch.org/pytorch-domains">PyTorch Domains</a>
             </li>
           </ul>
 
           <li class="resources-mobile-menu-title">
-            Resources
+            <a>Blog & News</a>
           </li>
             
            <ul class="resources-mobile-menu-items">
-
             <li>
-              <a href="https://pytorch.org/features">About</a>
+              <a href="https://pytorch.org/blog/">PyTorch Blog</a>
+            </li>
+            <li>
+              <a href="https://pytorch.org/community-blog">Community Blog</a>
             </li>
 
             <li>
-              <a href="https://pytorch.org/foundation">PyTorch Foundation</a>
-            </li>
-
-            <li>
-              <a href="https://pytorch.org/#community-module">Community</a>
+              <a href="https://pytorch.org/videos">Videos</a>
             </li>
 
             <li>
               <a href="https://pytorch.org/community-stories">Community Stories</a>
             </li>
-
-            <li>
-              <a href="https://pytorch.org/resources">Developer Resources</a>
-            </li>
-
             <li>
               <a href="https://pytorch.org/events">Events</a>
             </li>
+          </ul>
+          
+          <li class="resources-mobile-menu-title">
+            <a>About</a>
+          </li>
 
+          <ul class="resources-mobile-menu-items">
             <li>
-              <a href="https://discuss.pytorch.org/">Forums</a>
+              <a href="https://pytorch.org/foundation">PyTorch Foundation</a>
             </li>
-
             <li>
-              <a href="https://pytorch.org/hub">Models (Beta)</a>
+              <a href="https://pytorch.org/governing-board">Governing Board</a>
             </li>
           </ul>
-
-          <li>
-            <a href="https://github.com/pytorch/pytorch">Github</a>
-          </li>
         </ul>
       </div>
     </div>

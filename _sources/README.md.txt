@@ -1,3 +1,6 @@
+# ❗ANNOUNCEMENT: Security Changes❗
+TorchServe now enforces token authorization enabled and model API control disabled by default. These security features are intended to address the concern of unauthorized API calls and to prevent potential malicious code from being introduced to the model server. Refer the following documentation for more information: [Token Authorization](https://github.com/pytorch/serve/blob/master/docs/token_authorization_api.md), [Model API control](https://github.com/pytorch/serve/blob/master/docs/model_api_control.md)
+
 # TorchServe
 
 TorchServe is a performant, flexible and easy to use tool for serving PyTorch eager mode and torchscripted models.
@@ -7,6 +10,7 @@ TorchServe is a performant, flexible and easy to use tool for serving PyTorch ea
 * [Serving Quick Start](https://github.com/pytorch/serve/blob/master/README.md#serve-a-model) - Basic server usage tutorial
 * [Model Archive Quick Start](https://github.com/pytorch/serve/tree/master/model-archiver#creating-a-model-archive) - Tutorial that shows you how to package a model archive file.
 * [Installation](https://github.com/pytorch/serve/blob/master/README.md#install-torchserve) - Installation procedures
+* [Model loading](model_loading.md) - How to load a model in TorchServe?
 * [Serving Models](server.md) - Explains how to use TorchServe
 * [REST API](rest_api.md) - Specification on the API endpoint for TorchServe
 * [gRPC API](grpc_api.md) - TorchServe supports gRPC APIs for both inference and management calls
@@ -31,12 +35,17 @@ TorchServe is a performant, flexible and easy to use tool for serving PyTorch ea
 
 ## Examples
 
+* [Deploying LLMs](./llm_deployment.md) - How to easily deploy LLMs using TorchServe
 * [HuggingFace Language Model](https://github.com/pytorch/serve/blob/master/examples/Huggingface_Transformers/Transformer_handler_generalized.py) - This handler takes an input sentence and can return sequence classifications, token classifications or Q&A answers
 * [Multi Modal Framework](https://github.com/pytorch/serve/blob/master/examples/MMF-activity-recognition/handler.py) - Build and deploy a classifier that combines text, audio and video input data
-* [Dual Translation Workflow](https://github.com/pytorch/serve/tree/master/examples/Workflows/nmt_transformers_pipeline) - 
+* [Dual Translation Workflow](https://github.com/pytorch/serve/tree/master/examples/Workflows/nmt_transformers_pipeline) -
 * [Model Zoo](model_zoo.md) - List of pre-trained model archives ready to be served for inference with TorchServe.
 * [Examples](https://github.com/pytorch/serve/tree/master/examples) - Many examples of how to package and deploy models with TorchServe
+     - [TorchServe Internals](../examples/README.md#torchserve-internals)
+     - [TorchServe Integrations](../examples/README.md#torchserve-integrations)
+     - [TorchServe UseCases](../examples/README.md#usecases)
 * [Workflow Examples](https://github.com/pytorch/serve/tree/master/examples/Workflows) - Examples of how to compose models in a workflow with TorchServe
+* [Resnet50 HPU compile](../examples/pt2/torch_compile_hpu/README.md) - An example of how to run the model in compile mode with the HPU device
 
 ## Advanced Features
 
@@ -49,3 +58,4 @@ TorchServe is a performant, flexible and easy to use tool for serving PyTorch ea
 * [TorchServe on Kubernetes](https://github.com/pytorch/serve/blob/master/kubernetes/README.md#torchserve-on-kubernetes) -  Demonstrates a Torchserve deployment in Kubernetes using Helm Chart supported in both Azure Kubernetes Service and Google Kubernetes service
 * [mlflow-torchserve](https://github.com/mlflow/mlflow-torchserve) - Deploy mlflow pipeline models into TorchServe
 * [Kubeflow pipelines](https://github.com/kubeflow/pipelines/tree/master/samples/contrib/pytorch-samples) - Kubeflow pipelines and Google Vertex AI Managed pipelines
+* [NVIDIA MPS](nvidia_mps.md) - Use NVIDIA MPS to optimize multi-worker deployment on a single GPU
